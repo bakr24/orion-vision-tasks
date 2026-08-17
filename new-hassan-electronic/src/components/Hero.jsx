@@ -34,7 +34,7 @@ function Hero() {
 
         <div className="hero-visual">
   <img
-    src="/src/assets/showroom.png"
+    src="/src/assets/showroom.jpg"
     alt="New Hassan Electronics Showroom"
     className="hero-image"
   />
