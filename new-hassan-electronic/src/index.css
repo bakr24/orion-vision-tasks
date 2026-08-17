@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: #0f4c5c;
+  --secondary-color: #e85d04;
+  --dark-color: #1a1a1a;
+  --text-color: #555;
+  --light-color: #f7f8fa;
+  --white-color: #ffffff;
+  --border-color: #e5e7eb;
+  --container-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  padding: 90px 20px;
+}
+
+.container {
+  width: min(100% - 40px, var(--container-width));
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.section-header h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.section-header p {
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+/* Global Responsive - Tablet */
+
+@media (max-width: 1024px) {
+  .footer-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Global Responsive - Mobile */
+
+@media (max-width: 768px) {
+  section {
+    padding: 70px 20px;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Global Responsive - Small Mobile */
+
+@media (max-width: 480px) {
+  section {
+    padding: 60px 15px;
+  }
+
+  .container {
+    width: min(100% - 30px, var(--container-width));
+  }
+}

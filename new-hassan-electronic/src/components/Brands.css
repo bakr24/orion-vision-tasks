@@ -1,0 +1,96 @@
+/* Brands */
+
+.brands {
+  background-color: var(--white-color);
+  overflow: hidden;
+}
+
+
+.brands-marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.brands-track {
+  display: flex;
+  width: max-content;
+  gap: 24px;
+
+  animation: brandScroll 35s linear infinite;
+}
+
+
+.brand-card {
+  width: 220px;
+  min-width: 220px;
+  height: 140px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background-color: var(--white-color);
+
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+
+.brand-card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* Infinite Moving Animation */
+
+@keyframes brandScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 12px));
+  }
+}
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .brands-track {
+    gap: 16px;
+    animation-duration: 28s;
+  }
+
+  .brand-card {
+    width: 180px;
+    min-width: 180px;
+    height: 120px;
+    padding: 15px;
+  }
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+  .brands-track {
+    gap: 12px;
+    animation-duration: 24s;
+  }
+
+  .brand-card {
+    width: 150px;
+    min-width: 150px;
+    height: 100px;
+    padding: 12px;
+  }
+}
