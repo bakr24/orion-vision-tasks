@@ -1,5 +1,6 @@
 import "./Hero.css";
 import { FaArrowRight, FaWhatsapp } from "react-icons/fa";
+import showroomImg from "../assets/showroom.jpg"; // <-- Import the image correctly (change .webp to .jpg if your file is .jpg)
 
 function Hero() {
   return (
@@ -33,22 +34,22 @@ function Hero() {
         </div>
 
         <div className="hero-visual">
-  <img
-    src="/src/assets/showroom.jpg"
-    alt="New Hassan Electronics Showroom"
-    className="hero-image"
-  />
+          <img
+            src={showroomImg} // <-- Use the imported variable here
+            alt="New Hassan Electronics Showroom"
+            className="hero-image"
+          />
 
-  <div className="floating-card card-one">
-    <span style={{color: "white"}}>✓</span>
-    Wholesale Prices
-  </div>
+          <div className="floating-card card-one">
+            <span style={{color: "white"}}>✓</span>
+            Wholesale Prices
+          </div>
 
-  <div className="floating-card card-two">
-    <span style={{color: "white"}}>★</span>
-    Quality Products
-  </div>
-</div>
+          <div className="floating-card card-two">
+            <span style={{color: "white"}}>★</span>
+            Quality Products
+          </div>
+        </div>
       </div>
     </section>
   );
